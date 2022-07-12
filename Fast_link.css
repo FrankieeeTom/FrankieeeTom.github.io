@@ -1,0 +1,69 @@
+:root {
+    --color-primary: hsl(0, 0%, 15%);
+    --color-secondary: hsl(0, 0%, 21%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: hsl(0, 0%, 0%);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+button:active {
+    position: relative;
+    top: 2px;
+}
+
+
+input[type="text"] {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 10px 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+    width: auto;
+}
+
+::placeholder {
+    color: hsl(0, 0%, 20%);
+}
+
+select {
+    background-color: var(--color-secondary);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 10px 5px 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+    width: auto;
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+    width: auto;
+}
+
+
+h2 {
+    font-size: 24px;
+}
