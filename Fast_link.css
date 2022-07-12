@@ -1,13 +1,17 @@
 :root {
     --color-primary: hsl(0, 0%, 15%);
 }
+text {
 
+text-align: center;
+
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu',Monospace;
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 78%);
     font-size: 14px;
     font-weight: bold;
 }
