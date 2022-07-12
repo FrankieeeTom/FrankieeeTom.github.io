@@ -1,5 +1,5 @@
 # FrankieeeTom.github.io
-Usefull links
+Useful links
 
 [My GitHub](https://github.com/FrankieeeTom)
 
