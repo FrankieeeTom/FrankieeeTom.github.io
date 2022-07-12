@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu',Monospace;
     color: hsl(0, 0%, 0%);
     font-size: 14px;
     font-weight: bold;
@@ -18,13 +18,6 @@ body {
     margin-left: 15px;
     margin-top: 15px;
 }
-
-
-button:active {
-    position: relative;
-    top: 2px;
-}
-
 
 input[type="text"] {
     background-color: var(--color-secondary);
