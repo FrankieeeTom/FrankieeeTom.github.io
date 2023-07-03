@@ -4,33 +4,44 @@
   <title>František Tomáš - Info</title>
   <style>
     body {
-      background-color: blue;
-      font-family: "Comic Sans MS", cursive;
+      font-family: 'Jetbrains Mono', monospace;
+    }
+
+    .rainbow {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      border: none;
       color: white;
-    }
-    h1 {
+      padding: 15px 32px;
       text-align: center;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-    }
-    li {
-      margin-bottom: 10px;
-    }
-    a {
-      color: white;
       text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>Vítej na mé informační stránce!</h1>
-  <p>Najdeš zde odkazy na mé sociální sítě:</p>
-  <ul>
-    <li><a href="https://www.instagram.com/frankieee_tom">Instagram</a></li>
-    <li><a href="https://discord.gg/FSa6aVmkUk">Frantův server na Discordu</a></li>
-  </ul>
+  <h1 class="rainbow">František Tomáš</h1>
+  <p>Vítejte na mé informační stránce!</p>
+  <button class="button" onclick="showInstagram()">Instagram</button>
+  <button class="button" onclick="showDiscord()">Frantův server</button>
+
+  <script>
+    function showInstagram() {
+      alert("Instagram: https://www.instagram.com/frankieee_tom");
+    }
+
+    function showDiscord() {
+      alert("Frantův server: https://discord.gg/FSa6aVmkUk");
+    }
+  </script>
 </body>
 </html>
