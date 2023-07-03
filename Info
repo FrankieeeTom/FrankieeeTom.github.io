@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moje stránka</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        #panel {
+            background-color: #40426b;
+            padding: 10px;
+            color: #353535;
+            display: flex;
+            align-items: center;
+        }
+        
+        #logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        #logo-text {
+            font-family: 'JetBrains Mono', monospace;
+            color: #353535;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #40426b;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="panel">
+        <img id="logo" src="Logo.png" alt="Logo">
+        <h1 id="logo-text">Frankieee</h1>
+    </div>
+    
+    <div>
+        <a class="button" href="https://discord.gg/FSa6aVmkUk">Discord</a>
+        <p>Klikněte na toto tlačítko a staňte se součástí mého serveru!</p>
+    </div>
+    
+    <div>
+        <a class="button" href="https://www.instagram.com/frankieee_tom">Instagram</a>
+        <p>Klikněte zde a dejte follow na tento úchvatný Instagram!</p>
+    </div>
+</body>
+</html>
