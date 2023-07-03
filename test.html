@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Moje stránka</title>
+    <meta charset="UTF-8">
+    <title>Frenký Srrrč Endžin</title>
     <style>
         body {
-            background-color: #353535;
-            margin: 0;
-            padding: 0;
+            background-color: #808080;
         }
 
-        #panel {
-            background-color: #40426b;
-            color: #353535;
-            font-family: "Jetbrains Mono", monospace;
-            padding: 10px;
+        #search-container {
             text-align: center;
+            margin-top: 100px;
         }
 
-        #panel h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #353535;
-            color: #fff;
-            padding: 10px 20px;
-            margin-top: 20px;
-            text-decoration: none;
+        #search-text {
+            font-family: 'JetBrains Mono', monospace;
+            color: white;
+            background-color: #FFFFFF;
+            padding: 10px;
+            border: none;
             border-radius: 5px;
-            font-family: "Jetbrains Mono", monospace;
+            width: 300px;
             font-size: 16px;
-        }
-
-        .button:hover {
-            background-color: #40426b;
         }
     </style>
 </head>
 <body>
-    <div id="panel">
-        <h1>Frankieee</h1>
+    <h1 style="text-align: center; font-family: 'JetBrains Mono', monospace; color: white;">Frenký Srrrč Endžin</h1>
+    <div id="search-container">
+        <input type="text" id="search-text" placeholder="Zadejte vyhledávací dotaz">
     </div>
 
-    <a href="https://discord.gg/FSa6aVmkUk" class="button">Discord</a>
-    <p>Klikněte na toto tlačítko a staňte se součástí mého serveru!</p>
+    <script>
+        var searchInput = document.getElementById('search-text');
 
-    <a href="https://www.instagram.com/frankieee_tom" class="button">Instagram</a>
-    <p>Klikněte zde a dejte follow na tento úchvatný Instagram!</p>
+        searchInput.addEventListener('keyup', function(event) {
+            if (event.keyCode === 13) {
+                var query = searchInput.value;
+                var url = 'https://duckduckgo.com/?q=' + encodeURIComponent(query);
+                window.location.href = url;
+            }
+        });
+    </script>
 </body>
 </html>
