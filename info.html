@@ -4,7 +4,7 @@
     <title>Moje stránka</title>
     <style>
         body {
-            background-color: #545a6d;
+            background-color: #353535;
             margin: 0;
             padding: 0;
         }
@@ -23,37 +23,46 @@
             color: #fff;
         }
 
-        .button {
-        cursor: pointer;
-        margin: 10px;
-        padding: 10px 20px;
-        background-color: var(--color-secondary);
-        border: 3px solid hsl(0, 0%, 0%);
-        border-radius: 100px;
-        font-weight: bold;
-        box-shadow: 5px 5px hsl(0, 0%, 0%);
+        .shadow__btn {
+            padding: 10px 20px;
+            border: none;
+            font-size: 17px;
+            color: #fff;
+            border-radius: 7px;
+            letter-spacing: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: 0.5s;
+            transition-property: box-shadow;
+            background: rgb(0,140,255);
+            box-shadow: 0 0 25px rgb(0,140,255);
+            text-decoration: none;
+            display: inline-block;
         }
 
-        .button:hover {
-            background-color: #40426b;
+        .shadow__btn:hover {
+            box-shadow: 0 0 5px rgb(0,140,255),
+                        0 0 25px rgb(0,140,255),
+                        0 0 50px rgb(0,140,255),
+                        0 0 100px rgb(0,140,255);
         }
 
         .description {
             text-align: right;
             font-family: Arial, sans-serif;
-            color: #fffcfc;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <div id="panel">
-        <h1>Frankie Thomas</h1>
+        <h1>Frankieee</h1>
     </div>
 
-    <a href="https://discord.gg/FSa6aVmkUk" class="button">Discord</a>
+    <a href="https://discord.gg/FSa6aVmkUk" class="shadow__btn">Discord</a>
     <p class="description">Klikněte na toto tlačítko a staňte se součástí mého serveru!</p>
 
-    <a href="https://www.instagram.com/frankieee_tom" class="button">Instagram</a>
+    <a href="https://www.instagram.com/frankieee_tom" class="shadow__btn">Instagram</a>
     <p class="description">Klikněte zde a dejte follow na tento úchvatný Instagram!</p>
 </body>
 </html>
