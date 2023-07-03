@@ -4,8 +4,8 @@
   <title>Frankie Thomas - Info</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', monospace;
-      background-color: #202028;
+      font-family: 'Jetbrains Mono', monospace;
+      background-color: #f2f2f2;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -15,13 +15,13 @@
     }
 
     .rainbow {
-      background-color: white;
+      background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .button {
-      background-color: #333070;
+      background-color: #4CAF50;
       border: none;
       color: white;
       padding: 15px 32px;
@@ -36,10 +36,10 @@
   </style>
 </head>
 <body>
-  <h1 class="rainbow">František Tomáš</h1>
+  <h1 class="rainbow">Frankie Thomas</h1>
   <p>Vítejte na mé informační stránce!</p>
-  <button class="button" onclick="showInstagram()">Instagram</button>
-  <button class="button" onclick="showDiscord()">Frantův server</button>
+  <button class="button" onclick="goToInstagram()">Instagram</button>
+  <button class="button" onclick="goToDiscord()">Frantův server</button>
 
   <script>
     function goToInstagram() {
