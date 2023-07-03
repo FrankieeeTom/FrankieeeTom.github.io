@@ -4,55 +4,50 @@
     <title>Moje stránka</title>
     <style>
         body {
+            background-color: #353535;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
         }
-        
+
         #panel {
             background-color: #40426b;
+            color: #353535;
+            font-family: "Jetbrains Mono", monospace;
             padding: 10px;
-            color: #353535;
-            display: flex;
-            align-items: center;
+            text-align: center;
         }
-        
-        #logo {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+
+        #panel h1 {
+            margin: 0;
+            font-size: 24px;
         }
-        
-        #logo-text {
-            font-family: 'JetBrains Mono', monospace;
-            color: #353535;
-        }
-        
+
         .button {
             display: inline-block;
+            background-color: #353535;
+            color: #fff;
             padding: 10px 20px;
-            background-color: #40426b;
-            color: white;
+            margin-top: 20px;
             text-decoration: none;
             border-radius: 5px;
-            margin: 10px 0;
+            font-family: "Jetbrains Mono", monospace;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #40426b;
         }
     </style>
 </head>
 <body>
     <div id="panel">
-        <img id="logo" src="Logo.png" alt="Logo">
-        <h1 id="logo-text">Frankieee</h1>
+        <h1>Frankieee</h1>
     </div>
-    
-    <div>
-        <a class="button" href="https://discord.gg/FSa6aVmkUk">Discord</a>
-        <p>Klikněte na toto tlačítko a staňte se součástí mého serveru!</p>
-    </div>
-    
-    <div>
-        <a class="button" href="https://www.instagram.com/frankieee_tom">Instagram</a>
-        <p>Klikněte zde a dejte follow na tento úchvatný Instagram!</p>
-    </div>
+
+    <a href="https://discord.gg/FSa6aVmkUk" class="button">Discord</a>
+    <p>Klikněte na toto tlačítko a staňte se součástí mého serveru!</p>
+
+    <a href="https://www.instagram.com/frankieee_tom" class="button">Instagram</a>
+    <p>Klikněte zde a dejte follow na tento úchvatný Instagram!</p>
 </body>
 </html>
